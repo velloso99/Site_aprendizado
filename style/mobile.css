@@ -17,3 +17,16 @@ font-family: 'Marhey', cursive;
 font-family: '|Mynerve', cursive;
 font-family: 'Roboto', sans-serif;
 */
+
+@media screen and(max-width: 1200px) {
+    /*Elementos Header*/
+    header{
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.2)), url('../imagens/headerCapa M.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+    }
+}
+
+
