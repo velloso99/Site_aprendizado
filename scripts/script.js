@@ -2,7 +2,7 @@
 
 function mostrarMenu(){
     $('nav#nav-esquerda ul.menu-principal').css('display', 'flex');
-    $('nav#vav-esquerda ul.menu-orincipal').addClass('animate__animated animate__fadeInLeft animate__slow');
+    $('nav#vav-esquerda ul.menu-orincipal').addClass('animate__animated animate__fadeInRigth animate__slow');
 
     $('nav#nav-esquerda ul#icone-menu li#menu').css('display', 'none');
     $('nav#nav-esquerda ul#icone-menu li#menux').css('display', 'flex');
