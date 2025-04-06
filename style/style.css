@@ -167,7 +167,10 @@ section.sobre{
     text-align: center;
 
 }
-
+section.sobre div.sobre_mestre{
+    text-align: center;
+    margin-bottom: 40px;
+}
 
 
 
