@@ -46,7 +46,7 @@ header{
 
     position: relative;
 }
-/*-----------NaAV BAr--------------*/
+/*-----------NaV BAr--------------*/
 header nav#nav-esquerda{
     width: 100%;
     height: 150px;
@@ -54,6 +54,7 @@ header nav#nav-esquerda{
     display: flex;
     flex-flow: row;
     align-items: center;
+    /*justify-content: space-between;*/
     
 }
 header nav#nav-esquerda div#logo{
@@ -100,3 +101,21 @@ header nav#nav-esquerda ul.menu-principal li a:hover{
     opacity: .6;
     border-bottom: 1px solid #fff;
 }
+/*______________Chamada________________*/
+header div.chamada{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
