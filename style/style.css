@@ -33,8 +33,32 @@ h2{
     font-family: 'Marhey', cursive;
     text-shadow: 4px 4px 4px #464646;
     font-weight: 700;
-    font-size: max(20px, 2.8vw);
+    font-size: max(20px, 2.8vw);  
 }
+/*_________Botão Chamada__________*/
+div.chamada a{
+    font-size: max(16px, 1.8vw);
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 80px;
+    border-radius: 50px;
+    font-weight: 600;
+    background: linear-gradient(rgba(217,197,137,1)0%, rgba(140,28,58,1)50%, rgba(140,28,58,1)100%);
+
+    display: inline-block;
+
+    animation-name: HeaderA-moverParaCima;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+    transition: .3s ease-in-out;
+}
+div.chamda a:hover{
+    opacity:  .8;
+}
+
+
 /*Elementos Header*/
 header{
     max-width: 100%;
@@ -54,7 +78,7 @@ header nav#nav-esquerda{
     display: flex;
     flex-flow: row;
     align-items: center;
-    /*justify-content: space-between;*/
+    justify-content: space-between;
     
 }
 header nav#nav-esquerda div#logo{
@@ -111,7 +135,24 @@ header div.chamada{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+header div.chamada h1{
+    color: #fff;
+    
+    animation-name: headerH1-moverParaEsquerda;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+header div.chamada h2{
+    color: #D9C589;
+    
+    margin-bottom: 55px;
 
+    animation-name: HeaderH2-moverParaEsquerda;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
 
 
 
