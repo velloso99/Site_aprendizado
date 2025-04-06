@@ -183,6 +183,7 @@ section.sobre div.sobre-mestre h2{
 /*----------------*/
 section.solucao{
     width: 100%;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -192,6 +193,7 @@ section.solucao{
     padding-top: 20px;
     padding-bottom: 40px;
     margin-bottom: 60px;
+
     background-color: #D9765F ;
 }
 section.solucao h2{
@@ -223,8 +225,12 @@ section.solucao div.solucao-mestre div.solucao-texto p{
     font-size: max(16px, 1vw);
 }
 section.solucao div.solucao-mestre div.solucao-img{
-    max-width: 400px;   
+    max-width: 100px; 
+    width: 100%;
+    height: auto;  
 }
 section.solucao div.solucao-mestre div.solucao-img img{
-    max-width: 100px;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
 }
