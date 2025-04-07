@@ -1,137 +1,158 @@
 /*
-Cores
+CORES
 #D92B04
-#45B58C
+#45858C
 #A0D9D9
 #D9C589
 #BF9765
+
 #8C1C3A
 #BF244E
 #F2A88D
 #D9765F
-#Bf8821
+#BF8821
 
 font-family: 'Caveat', cursive;
 font-family: 'EB Garamond', serif;
 font-family: 'Marhey', cursive;
-font-family: '|Mynerve', cursive;
+font-family: 'Mynerve', cursive;
 font-family: 'Roboto', sans-serif;
 */
 
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     display: none;
 }
-/*-----------------*/
+
 h1{
-    font-family: 'Marhey', cursive;
-    text-shadow: 4px 4px 4px #000;
+    font-family: 'Mynerve', cursive;
+    text-shadow: 4px 4px 6px #000;
     font-weight: 700;
     font-size: max(44px, 5.2vw);
 }
+
 h2{
     font-family: 'Marhey', cursive;
-    text-shadow: 4px 4px 4px #464646;
+    text-shadow: 4px 4px 6px #464646;
     font-weight: 700;
-    font-size: max(20px, 2.8vw);  
+    font-size: max(20px, 2.8vw);
 }
-/*_________Botão Chamada__________*/
+
+/*------- BOTÃO CHAMADA ------------*/
+
 div.chamada a{
     font-size: max(16px, 1.8vw);
-    color: #fff;
+    color: #FFF;
     text-decoration: none;
     padding: 20px 80px;
     border-radius: 50px;
     font-weight: 600;
-    background: linear-gradient(rgba(217,197,137,1)0%, rgba(140,28,58,1)50%, rgba(140,28,58,1)100%);
+    background: linear-gradient(rgba(217, 197, 137, 1) 0%, rgba(140, 28, 58, 1)50%, rgba(140, 28, 58, 1)100%);
 
     display: inline-block;
 
     animation-name: HeaderA-moverParaCima;
-    animation-duration: 5s;
+    animation-duration: 1.5s;
     animation-delay: 1s;
     animation-timing-function: ease-out;
     animation-fill-mode: backwards;
     transition: .3s ease-in-out;
-}
-div.chamda a:hover{
-    opacity:  .8;
+    
 }
 
-/*-----------------*/
-/*Elementos Header*/
-/*----------------*/
+div.chamada a:hover{
+    opacity: .8;
+}
+
+/*--------------------------*/
+/*  ELEMENTOS DO HEADER     */
+/*--------------------------*/
 
 header{
     max-width: 100%;
     height: 90vh;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.2)), url('../imagens/headerCapa G.jpg');
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.2)) ,url('../imagens/headerCapa G.jpg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     background-size: cover;
 
     position: relative;
 }
-/*-----------NaV BAr--------------*/
+
+/*------- NAVEBAR ------------*/
+
 header nav#nav-esquerda{
     width: 100%;
     height: 150px;
-    
+
     display: flex;
     flex-flow: row;
-    align-items: center;
-    justify-content: space-between;
-    
+    align-items: center;   
+    /* justify-content: space-between; */
 }
+
 header nav#nav-esquerda div#logo{
     max-width: 100px;
     max-height: 120px;
     margin-left: 5rem;
 }
+
 header nav#nav-esquerda div#logo img{
-    max-width: 100px;
-    max-height: 100px;   
+    max-width: 100%;
+    max-height: 100%;
 }
-/*-----------Mneu Hamburguer--------------*/
+
+/*-------- MENU HAMBURGUER -----------*/
+
 header nav#nav-esquerda ul#icone-menu{
     display: none;
 }
+
 header nav#nav-esquerda ul#icone-menu li{
-    list-style: none;  
+    list-style: none;
 }
+
 header nav#nav-esquerda ul#icone-menu li ion-icon{
     font-size: 50px;
     color: #fff;
-    margin-right: 2rem;;
+    margin-right: 2rem;
 }
-/*_________________Menu Principal____________________*/
+
+/*-------- MENU -------------- */
+
 header nav#nav-esquerda ul.menu-principal{
     margin-left: 5rem;
-    
+
     display: flex;
     flex-flow: row wrap;
 }
+
 header nav#nav-esquerda ul.menu-principal li{
     list-style: none;
     margin-right: 2rem;
 }
+
 header nav#nav-esquerda ul.menu-principal li a{
     text-decoration: none;
     color: #fff;
     font-size: 110%;
     text-shadow: 4px 6px 10px #000;
-    padding-bottom: 10px;;
+    padding-bottom: 10px;
     transition: .3s ease-in-out;
 }
+
 header nav#nav-esquerda ul.menu-principal li a:hover{
     opacity: .6;
     border-bottom: 1px solid #fff;
 }
-/*______________Chamada________________*/
+
+/*-------- CHAMADA -------------- */
+
 header div.chamada{
     position: absolute;
     width: 100%;
@@ -140,17 +161,22 @@ header div.chamada{
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-header div.chamada h1{
-    color: #fff;
     
-    animation-name: HeaderH1-moverParaDireita;
-    animation-duration: 5s;
-    animation-timing-function: ease-out;
 }
+
+header div.chamada h1{
+    color: #FFF;
+
+    animation-name: HeaderH1-moverParaDireita;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    
+
+}
+
 header div.chamada h2{
     color: #D9C589;
-    
+
     margin-bottom: 55px;
 
     animation-name: HeaderH2-moverParaEsquerda;
@@ -159,32 +185,37 @@ header div.chamada h2{
     animation-timing-function: ease-out;
     animation-fill-mode: backwards;
 }
-/*-----------------*/
-/*------Sobre----- */
-/*----------------*/
+
+/*--------------------------*/
+/*          SOBRE           */
+/*--------------------------*/
 
 section.sobre{
     max-width: 100%;
-    padding: 60px;
+    padding-top: 60px;
     padding-bottom: 30px;
     margin-bottom: 20px;
     text-align: center;
-
 }
+
 section.sobre div.sobre-mestre{
     text-align: center;
     margin-bottom: 40px;
 }
+
 section.sobre div.sobre-mestre img{
-    border: 10px solid #45B58C;
+    border: 2px solid #BF9765;
 }
+
 section.sobre div.sobre-mestre h2{
     font-size: max(22px, 1.8vw);
     margin-top: 10px;
 }
-/*-----------------*/
-/*---section ----- */
-/*----------------*/
+
+/*--------------------------*/
+/*  SECTION MULHERES MERECEM         */
+/*--------------------------*/
+
 section.solucao{
     width: 100%;
 
@@ -192,55 +223,59 @@ section.solucao{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top: 5px solid #45B58C;
-    border-bottom: 5px solid #45B58C;
+    border-top: 5px solid #45858C;
+    border-bottom: 5px solid #45858C;
     padding-top: 20px;
     padding-bottom: 40px;
     margin-bottom: 60px;
 
-    background-color: #D9765F ;
+    background-color: #D9765F;
 }
+
 section.solucao h2{
     margin-top: 40px;
     margin-bottom: 50px;
     max-width: 950px;
     text-align: center;
-    color: #fff;
+    color: #FFF;
     font-size: max(22px, 2.8vw);
 }
-section.solucao-mestre{
+
+section.solucao div.solucao-mestre{
     width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     margin-bottom: 40px;
 }
+
 section.solucao div.solucao-mestre div.solucao-texto{
     max-width: 800px;
     text-align: left;
     line-height: 1.8;
+
     margin-bottom: 20px;
 }
+
 section.solucao div.solucao-mestre div.solucao-texto p{
     width: 95%;
     margin: auto;
-    color: #fff;
-    text-shadow: 2px 2px 5px #181717 ;
+    color: #FFF;
+    text-shadow: 2px 2px 5px #181717;
     font-size: max(16px, 1vw);
 }
+
 section.solucao div.solucao-mestre div.solucao-img{
-    max-width: 100px; 
-    width: 100%;
-    height: auto;  
+    max-width: 400px;
 }
+
 section.solucao div.solucao-mestre div.solucao-img img{
-    max-width: 300px;
-    width: 100%;
-    height: auto;
+    max-width: 100%;
 }
-/*-------------------*/
-/*---section Make-- */
-/*-----------------*/
+
+/*--------------------------*/
+/*  SECTION MAKES       */
+/*--------------------------*/
 section.makes{
     width: 100%;
     display: flex;
@@ -251,106 +286,115 @@ section.makes{
     padding-bottom: 40px;
     margin-bottom: 60px;
 }
+
 section.makes h2{
-   margin-top: 40px;
-   margin-bottom: 50px;
-   max-width: 850px;
-   font-size: max(22px, 2.8vw);
-   text-align: center;
-   color:#BF9765 ;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    max-width: 850px;
+    font-size: max(22px, 2.8vw);
+    text-align: center;
+    color: #BF9765;
 }
-section.makes div.makes-mestre{
+
+section.makes div.makes-container{
     width: 90%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
 }
-section.makes div.makes-mestre div.makes-texto{
-    max-width: 800px;
-    text-align: left;
-    line-height: 1.8;
-    margin-bottom: 20px;
-}
-/*-------------------*/
-/*--Elementos footer-- */
-/*-----------------*/
+
+/*--------------------------*/
+/*  ELEMENTOS DO FOOTER     */
+/*--------------------------*/
 footer{
     width: 100%;
-    background-color: #5c451b ;
+    background-color: #5c451b;
     padding-bottom: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 footer div.footer-container{
     width: 100%;
     display: flex;
-    flex: row wrap;
+    flex-flow: row wrap;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
 }
+
 footer div.footer-container div.logo-footer{
-    width: 150%;
+    width: 150px;
     padding-top: 20px;
     padding-bottom: 20px;
     cursor: pointer;
 }
+
 footer div.footer-container div.logo-footer img{
-    max-width: 100px;
-    
+    max-width: 100%;
 }
+
 footer div.footer-container div.footer-info{
     width: 70%;
     margin-bottom: 50px;
     padding-top: 20px;
     display: flex;
-    flex:  row wrap;
+    flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
 }
+
 footer div.footer-container div.footer-info nav.nav-footer ul{
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem; 
-
-
+    margin-bottom: 2rem;
 }
+
 footer div.footer-container div.footer-info nav.nav-footer ul li{
     list-style: none;
     margin-bottom: 15px;
-
-
 }
+
 footer div.footer-container div.footer-info nav.nav-footer ul li a{
     text-decoration: none;
-    color: #fff;
+    color: #FFF;
     font-size: 110%;
-   
-    transition: .3s ease-in-out;
+
+    transition: .3s ease-out;
 }
+
 footer div.footer-container div.footer-info nav.nav-footer ul li a:hover{
-    border-bottom: 2px solid #D9C589;
-    
+    border: 2px solid #D9C589;
 }
+
 footer div.footer-container div.footer-info div.cartoes{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 footer div.footer-container div.footer-info div.cartoes span{
     font-family: 'Roboto', sans-serif;
-    color: #fff;
+    color: #FFF;
     font-size: max(16px, 1.5vw);
-    margin-bottom: 15px;
+    margin-top: 15px;
 }
-footer div.footer-container div.footer-info div.footer-img-cartoes{
+
+footer div.footer-container div.footer-info div.cartoes div.footer-img-cartoes{
     max-width: 340px;
 }
-footer div.footer-container div.footer-info div.footer-img-cartoes img{
+
+footer div.footer-container div.footer-info div.cartoes div.footer-img-cartoes img{
     max-width: 100%;
+}
+
+footer span.autorais{
+    color: #FFF;
+    font-size: max(14px, .8vw);
+    margin-top: 20px;
 }
 
 
