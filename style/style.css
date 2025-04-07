@@ -237,10 +237,37 @@ section.solucao div.solucao-mestre div.solucao-img img{
 /*-------------------*/
 /*---section Make-- */
 /*-----------------*/
-
-
-
-
+section.makes{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 60px;
+}
+section.makes h2{
+   margin-top: 40px;
+   margin-bottom: 50px;
+   max-width: 850px;
+   font-size: max(22px, 2.8vw);
+   text-align: center;
+   color:#BF9765 ;
+}
+section.makes div.makes-mestre{
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+section.makes div.makes-mestre div.makes-texto{
+    max-width: 800px;
+    text-align: left;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
 
 
 
