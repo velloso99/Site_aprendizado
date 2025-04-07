@@ -23,6 +23,10 @@ font-family: 'Roboto', sans-serif;
     margin: 0;
     box-sizing: border-box; 
 }
+::-webkit-scrollbar{
+    display: none;
+}
+/*-----------------*/
 h1{
     font-family: 'Marhey', cursive;
     text-shadow: 4px 4px 4px #000;
@@ -268,6 +272,91 @@ section.makes div.makes-mestre div.makes-texto{
     line-height: 1.8;
     margin-bottom: 20px;
 }
+/*-------------------*/
+/*--Elementos footer-- */
+/*-----------------*/
+footer{
+    width: 100%;
+    background-color: #5c451b ;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer div.footer-container{
+    width: 100%;
+    display: flex;
+    flex: row wrap;
+    justify-content: center;
+    align-items: center ;
+}
+footer div.footer-container div.logo-footer{
+    width: 150%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+footer div.footer-container div.logo-footer img{
+    max-width: 100px;
+    
+}
+footer div.footer-container div.footer-info{
+    width: 70%;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    display: flex;
+    flex:  row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+footer div.footer-container div.footer-info nav.nav-footer ul{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem; 
+
+
+}
+footer div.footer-container div.footer-info nav.nav-footer ul li{
+    list-style: none;
+    margin-bottom: 15px;
+
+
+}
+footer div.footer-container div.footer-info nav.nav-footer ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 110%;
+   
+    transition: .3s ease-in-out;
+}
+footer div.footer-container div.footer-info nav.nav-footer ul li a:hover{
+    border-bottom: 2px solid #D9C589;
+    
+}
+footer div.footer-container div.footer-info div.cartoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer div.footer-container div.footer-info div.cartoes span{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: max(16px, 1.5vw);
+    margin-bottom: 15px;
+}
+footer div.footer-container div.footer-info div.footer-img-cartoes{
+    max-width: 340px;
+}
+footer div.footer-container div.footer-info div.footer-img-cartoes img{
+    max-width: 100%;
+}
+
+
+
+
+
 
 
 
