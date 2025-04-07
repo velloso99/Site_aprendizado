@@ -6,7 +6,7 @@
         transform: translateX(-75px);
     }
     70%{
-        transform: translateX(10px);
+        transform: translateX(20px);
     }
     100%{
         opacity: 1;

@@ -52,7 +52,7 @@ div.chamada a{
     display: inline-block;
 
     animation-name: HeaderA-moverParaCima;
-    animation-duration: 1s;
+    animation-duration: 5s;
     animation-delay: 1s;
     animation-timing-function: ease-out;
     animation-fill-mode: backwards;
@@ -144,8 +144,8 @@ header div.chamada{
 header div.chamada h1{
     color: #fff;
     
-    animation-name: headerH1-moverParaEsquerda;
-    animation-duration: 2s;
+    animation-name: HeaderH1-moverParaDireita;
+    animation-duration: 5s;
     animation-timing-function: ease-out;
 }
 header div.chamada h2{
